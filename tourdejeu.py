@@ -32,7 +32,7 @@ def compar_liste(liste_jeu, liste_joueur):
         # regarder si le n°ème élement de la liste du joueur est dans la liste du jeu
         # si oui, regarder si il correspond au n°ème de la liste du jeu
         # si oui alors n°ème élément est bien placé, sinon il est dans la liste du jeu, mais mal placé
-        for i, j in zip(liste_joueur, liste_jeu):
+        for i, j in zip(liste_joueur, liste_jeu): # petit probleme de doublon
 
             if i in liste_jeu:
                 if i == j:
@@ -42,10 +42,14 @@ def compar_liste(liste_jeu, liste_joueur):
             else:
                 nb_e_wrong += 1
 
-        print("nombre d'éléments bien placés :", nb_e_perfect_place)
-        print("nombre d'éléments mal placés :", nb_e_bad_place)
-        print("nombre d'éléments mauvais :", nb_e_wrong)
-        return False
+    dp_e_perfect_place = nb_e_perfect_place * 'O'
+    dp_e_bad_place = nb_e_bad_place * 'X'
+    dp_e_wrong = nb_e_wrong * '.'
+    print("nombre d'éléments bien placés :", nb_e_perfect_place)
+    print("nombre d'éléments mal placés :", nb_e_bad_place)
+    print("nombre d'éléments mauvais :", nb_e_wrong)
+    print(dp_e_perfect_place, dp_e_bad_place, dp_e_wrong)
+    return False
 
 
 test = False
@@ -57,6 +61,6 @@ print(liste_to_guest)
 
 while not test:
     liste_player = verif_saisie(parametre_init[0], parametre_init[1])  # Essai du joueur
-    print(liste_player)
+    # print(liste_player)
     test = compar_liste(liste_to_guest, liste_player)  # Comparaison des listes
-    print(test)
+    # print(test)
