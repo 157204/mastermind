@@ -1,4 +1,4 @@
-from random import *
+from random import randrange
 
 
 def param_init():
