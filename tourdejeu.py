@@ -42,22 +42,23 @@ def compar_liste(liste_jeu, liste_joueur):
             else:
                 nb_e_wrong += 1
 
-    dp_e_perfect_place = nb_e_perfect_place * 'O'
-    dp_e_bad_place = nb_e_bad_place * 'X'
-    dp_e_wrong = nb_e_wrong * '.'
-    print("Nombre d'éléments bien placés :", nb_e_perfect_place)
-    print("Nombre d'éléments mal placés :", nb_e_bad_place)
-    print("Nombre d'éléments mauvais :", nb_e_wrong)
-    print(dp_e_perfect_place, dp_e_bad_place, dp_e_wrong)
+    # dp_e_perfect_place = nb_e_perfect_place * 'O'
+    # dp_e_bad_place = nb_e_bad_place * 'X'
+    # dp_e_wrong = nb_e_wrong * '.'
+    # print("Nombre d'éléments bien placés :", nb_e_perfect_place)
+    # print("Nombre d'éléments mal placés :", nb_e_bad_place)
+    # print("Nombre d'éléments mauvais :", nb_e_wrong)
+    # print(dp_e_perfect_place, dp_e_bad_place, dp_e_wrong, '\n')
+    print(nb_e_perfect_place, 'Bien placé (s)', nb_e_bad_place, 'Mal placé (s)', '\n')
     return False
 
 
 test = False
 parametre_init = param_init()  # initialisé les paramètres de jeu
-print(parametre_init)
+# print(parametre_init)
 
 liste_to_guest = init(parametre_init[0], parametre_init[1])  # initialiser un liste à deviner
-print(liste_to_guest)
+# print(liste_to_guest)
 
 liste_player, essai = 0, 1
 
