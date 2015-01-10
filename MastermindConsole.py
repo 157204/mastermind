@@ -2,16 +2,16 @@ from initialisation import *
 from tourdejeu import *
 
 print("Bienvenue sur le jeu MASTERMIND !\n\n")
-play = 0
+play = True
 
-while play != 'non':
-    play = input("voulez-vous jouer (oui or non)? ")
-    if play == 'oui':
+while play:
+    play = input("voulez-vous jouer (oui or non)? ").capitalize()
+
+    if play == 'Oui' or play == 'Yes' or play == 'Y':
         print('Prener place, la partie va commencer !!\n')
 
         test = False
         parametre_init = param_init()  # initialisé les paramètres de jeu
-        # print(parametre_init)
 
         liste_to_guest = init(parametre_init[0], parametre_init[1])  # initialiser un liste à deviner
         # print(liste_to_guest)
@@ -31,7 +31,12 @@ while play != 'non':
             elif test == True:
                 print('FELICITATION !!')
                 # print(test)
-    elif play == 'non':
+
+        print('\n')
+
+    elif play == 'Non' or play == 'Not' or play == 'N':
+        play = False
         print('Une prochaine fois!')
     else:
+        play = True
         print('Veuiller dire oui ou non..')
