@@ -38,9 +38,3 @@ def init(nbcouleur, longsuite):
         liste.append(randrange(1, nbcouleur + 1))
 
     return (liste)
-
-
-#liste = param_init()
-# print(liste)
-#
-#print(init(liste[0], liste[1]))

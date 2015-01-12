@@ -1,6 +1,6 @@
 from random import randrange
 # def verif_saisie(nbcouleur, longsuite):
-#     liste = []
+# liste = []
 #     liste_saisie = input('Saisir une proposition :')
 #
 #     if len(liste_saisie) != longsuite:
@@ -19,17 +19,18 @@ from random import randrange
 #             liste.append(temp)
 #     return liste
 
-def liste_ia(nbcouleur, longsuite, liste):
-    if liste == None: # on initialise la première proposistion
-        liste = []
-        for i in range(longsuite):
-            liste.append(randrange(1, nbcouleur + 1))
-        return liste
-    else:
-        print('1')
+def changelettre(lettre):
+    x = ord(lettre)
+    if x >= 65 and x <= 90:  # to miniscule
+        x += 32
+    elif x >= 97 and x <= 122:
+        x -= 32
 
-liste = None
+    x = chr(x)
+    print(x)
 
-liste_ordi = liste_ia(6,4, liste)
+    return x
 
-print(liste_ordi)
+
+changelettre(input('lettre : '))
+
