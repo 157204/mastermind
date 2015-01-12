@@ -54,8 +54,8 @@
           <file leaf-file-name="MastermindConsole.py" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/MastermindConsole.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.3812825" vertical-offset="579" max-vertical-offset="1156">
-                  <caret line="49" column="27" selection-start-line="49" selection-start-column="27" selection-end-line="49" selection-end-column="27" />
+                <state vertical-scroll-proportion="0.027729636" vertical-offset="273" max-vertical-offset="1156">
+                  <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -107,11 +107,11 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/MastermindConsole.py" />
         <option value="$PROJECT_DIR$/MastermindIA.py" />
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/initialisation.py" />
         <option value="$PROJECT_DIR$/tourdejeu.py" />
+        <option value="$PROJECT_DIR$/MastermindConsole.py" />
       </list>
     </option>
   </component>
@@ -692,8 +692,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/MastermindConsole.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3812825" vertical-offset="579" max-vertical-offset="1156">
-          <caret line="49" column="27" selection-start-line="49" selection-start-column="27" selection-end-line="49" selection-end-column="27" />
+        <state vertical-scroll-proportion="0.027729636" vertical-offset="273" max-vertical-offset="1156">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding />
         </state>
       </provider>

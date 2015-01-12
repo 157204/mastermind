@@ -35,7 +35,7 @@ while play:
                 # print(test)
 
         print('\n')
-# -------- IA --------
+# -------- IA --------  # A compléter
     elif play == 'Ordi' or play == 'O':
         print('Prener place, la partie va commencer !!\n')
 
