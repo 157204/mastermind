@@ -1,3 +1,4 @@
+import pygame, sys, time
 from pygame.locals import *
 #from classes import *
 from constantes import *
@@ -34,16 +35,18 @@ txtGuide = fontObj.render("Guide", True, WHITE)
 txtOption = fontObj.render("Option", True, WHITE)
 txtQuitter = fontObj.render("Quitter", True, WHITE)
 txtVersion = fontObjMini.render(version, True, WHITE)
+txtLocalTime = fontObjMini.render('', True, WHITE)
 
 #BOUCLE PRINCIPALE
 continuer = 1
 continuer_intro = 1
+
 continuer_accueil = 0
 continuer_jeu = 0
 titre_intro = 1
 
 box_jouer = 0
-
+time = 0
 while continuer:
 
     #Chargement et affichage de l'écran d'acccueil
@@ -87,7 +90,22 @@ while continuer:
     while continuer_accueil:
 
         #limitation de la boucle
-        pygame.time.Clock().tick(30)
+        pygame.time.Clock().tick(1)
+
+        #Heure
+        # if time == 0:
+        #     Localtime = str(time.asctime(time.localtime(time.time())))
+        #     txtLocalTime = fontObjMini.render(Localtime, True, WHITE)
+        #     RectLocalTime = txtLocalTime.get_rect()
+        #     RectLocalTime.topright = (740, 780)
+        #     screen.blit(txtLocalTime, RectLocalTime)
+        #     time = 1
+        # else:
+        #     Localtime = time.asctime(time.localtime(time.time()))
+        #     txtLocalTime = fontObjMini.render(Localtime, True, WHITE)
+        #     RectLocalTime = txtLocalTime.get_rect()
+        #     RectLocalTime.move = (0, 0)
+        #     screen.blit(txtLocalTime, RectLocalTime)
 
         #Bouton Jouer
         RectJouer = txtJouer.get_rect()
@@ -157,6 +175,7 @@ while continuer:
                 if RectModJouer.collidepoint((x, y)):
                     mastermindgui(False)
                 if RectModJouerC.collidepoint((x, y)):
+                    continuer_accueil = 0
                     mastermindconsole(False)
 
 
