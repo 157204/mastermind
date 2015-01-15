@@ -2,10 +2,10 @@ from initialisation import *
 from tourdejeu import *
 from MastermindIA import *
 
-def console(main):
+def mastermindconsole(main):
     play = True
     while play:
-        play = input("voulez-vous jouer (oui or non)? Ou voulez vous que l'ordinateur joue (ordi)?").capitalize()
+        play = input("voulez-vous jouer (oui or non)? Ou voulez vous que l'ordinateur joue (IA)?").capitalize()
         essai = 0
     # -------- JOUEUR --------
         if play == 'Oui' or play == 'Yes' or play == 'Y':
@@ -15,9 +15,6 @@ def console(main):
             parametre_init = param_init()  # initialisé les paramètres de jeu
 
             liste_to_guest = init(parametre_init[0], parametre_init[1])  # initialiser un liste à deviner
-            # print(liste_to_guest)
-
-            liste_player = 0
 
             while not test:
                 print('Essai n°', essai)
@@ -35,7 +32,7 @@ def console(main):
 
             print('\n')
     # -------- IA --------  # A compléter
-        elif play == 'Ordi' or play == 'O':
+        elif play == 'IA' or play == 'I':
             print('Prener place, la partie va commencer !!\n')
 
             test = False
